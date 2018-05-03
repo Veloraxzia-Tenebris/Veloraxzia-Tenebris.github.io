@@ -5,23 +5,84 @@
 		body {background-color: black;}
 		h1 
 		{
-    			color: chartreuse;
-    			font-family: "Comic Sans MS";
-    			font-size: 420%;
+			color: chartreuse;
+			font-family: "Comic Sans MS";
+			font-size: 420%;
 			text-align: center;
 		}
-		.center 
+
+		.container 
 		{
-    			display: block;
+			position: relative;
+			width: 69%;
 			margin-left: auto;
 			margin-right: auto;
-    			width: 69%;
+		}
+
+		.image 
+		{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.overlay 
+		{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		.container:hover 
+		.overlay 
+		{
+			opacity: 1;
+		}
+
+		.text 
+		{
+			color: chartreuse;
+			font-size: 420px;
+			font-family: "Comic Sans MS";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+		}
+
+		.fade
+		{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			box-shadow: 0 0 50px 40px black inset;
 		}
 	</style>
 </head>
 
 <body>
 	<h1>E</h1>
-	<img src="E.png" alt="E" class="center">
+	<div class="container">
+		<img src="E.png" alt="E" class="image">
+		<div class="fade">
+			<div class="overlay">
+				<div class="text">
+					E
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
