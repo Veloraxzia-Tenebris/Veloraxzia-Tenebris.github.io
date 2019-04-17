@@ -53,11 +53,11 @@
 			right: 0;
 			height: 100%;
 			width: 100%;
-			box-shadow: 0 0 50px 40px black inset;
+			box-shadow: 0 0 50px 50px black inset;
 		}
 		.text 
 		{
-			color: chartreuse;
+			color: #000;
 			font-size: 500%;
 			font-family: "Comic Sans MS";
 			position: absolute;
@@ -76,16 +76,55 @@
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script language="javascript" type="text/javascript" src="sound_mouseover.js"></script>
+	<script language="javascript" type="text/javascript" src="color_thing.js"></script>
 </head>
 
-<body>
+<body onload="colorChanger()">
 	<h1>The Face of God</h1>
 	<div onmouseover="playAudio('the-song');" onmouseout="pauseAudio('the-song');" class="container">
 		<img src="image.bmp" alt="The Face of God" class="image">
 		<div class="fade">
 			<div class="overlay">
 				<div class="text">
-					And He was Crying
+						
+						
+						<canvas width=800% height=800%></canvas>
+	<script type="text/javascript">
+
+		var canvas = document.querySelector("canvas");
+var ctx = canvas.getContext("2d");
+
+ctx.font = "900 100% sans-serif";
+ctx.lineWidth=2;
+var str = "And He was Crying";
+var strwidth = ctx.measureText(str).width;
+
+var width=canvas.width;
+
+
+var c=0;
+var color=0;
+var img;
+
+(function a() {
+   img=ctx.getImageData(0,0,width,width);
+   ctx.putImageData(img,0,10);
+   ctx.save();
+   ctx.translate((width/2),width/2);
+   ctx.rotate(Math.PI*(c++/75));
+   
+   ctx.fillStyle='hsla('+(color=color+5%360)+', 100%, 50%, 1)';
+   ctx.fillText("And He was Crying",-(strwidth/2),20);
+   ctx.strokeText("And He was Crying",-(strwidth/2),20);
+   
+   ctx.restore();
+   
+   
+   requestAnimationFrame(a);
+})();
+	</script>
+				
+				
 				</div>
 			</div>
 		</div>
