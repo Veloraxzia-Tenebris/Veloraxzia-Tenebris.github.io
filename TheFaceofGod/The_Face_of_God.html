@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body 
+		{
+			background-color: black;
+		}
+		h1 
+		{
+			color: chartreuse;
+			font-family: "Comic Sans MS";
+			font-size: 420%;
+			text-align: center;
+		}
+		.container 
+		{
+			position: relative;
+			width: 69%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.image 
+		{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.overlay 
+		{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+		.container:hover 
+		.overlay 
+		{
+			opacity: 1;
+		}
+		.fade
+		{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			box-shadow: 0 0 50px 40px black inset;
+		}
+		.text 
+		{
+			color: chartreuse;
+			font-size: 500%;
+			font-family: "Comic Sans MS";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+		}
+		.center
+		{
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			width: 70%;
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script language="javascript" type="text/javascript" src="sound_mouseover.js"></script>
+</head>
+
+<body>
+	<h1>The Face of God</h1>
+	<div onmouseover="playAudio('the-song');" onmouseout="pauseAudio('the-song');" class="container">
+		<img src="image.bmp" alt="The Face of God" class="image">
+		<div class="fade">
+			<div class="overlay">
+				<div class="text">
+					And He was Crying
+				</div>
+			</div>
+		</div>
+	</div>
+	<audio id="the-song">
+		<source src="dl.mp3" type="audio/mpeg">
+		<source src="dl.oog" type="audio/ogg">
+		Rippity doo dah, rippity day, your browser, this song, it cannot play.
+	</audio>
+</body>
+</html>
