@@ -103,6 +103,10 @@ h3 {color:#c10037;}
 	height: 0px;
 }
 
+.logo img {
+	margin-left: 50px;
+}
+
 .slides {
 	height: 500px;
 	display: block;
