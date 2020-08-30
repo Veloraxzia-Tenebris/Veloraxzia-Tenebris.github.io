@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AIAA UNM Student Chapter</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald"/>
+</head>
+<body>
+	<div class="header">
+		<h1>AIAA UNM</h1>
+		<h2>Connecting students with aeronautics and astronautics interests</h2>
+		<div class="logo">
+			<img src="aiaa_logo.png" alt="AIAA Logo">
+			<img src="unm_logo.png" alt="UNM Logo">
+		</div>
+	</div>
+	<div class="navbar">
+		<a href="http://aiaa.unm.edu/internship-opportunities/">Opportunities</a>
+		<a href="http://aiaa.unm.edu/conference-papers/">Conference Papers</a>
+		<a href="http://aiaa.unm.edu/membership/">Membership</a>
+		<a href="http://aiaa.unm.edu/support/">Support</a>
+		<a href="http://aiaa.unm.edu/sample-page/">About Us</a>
+		<a href="http://aiaa.unm.edu/contact-us-2/" class="right">Contact Us</a>
+	</div>
+	<section>
+		<img class="slides" src="http://aiaa.unm.edu/wp-content/uploads/2016/04/160401-F-HA566-873-1024x454.jpg">
+		<img class="slides" src="http://aiaa.unm.edu/wp-content/uploads/2018/08/IMG_0852-1-e1534538659785-1024x535.jpg">
+		<img class="slides" src="http://aiaa.unm.edu/wp-content/uploads/2019/04/afrl-the-air-force-research-laboratory-logo-vector.png">
+	</section>
+	<script>
+		var myIndex = 0;
+		carousel();
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("slides");
+			for(i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+			}
+			myIndex++;
+			if(myIndex > x.length)
+				myIndex = 1;
+			x[myIndex-1].style.display = "block";
+			setTimeout(carousel, 3000);
+		}
+	</script>
+	<div class="main">
+		<p></p><p></p>
+		<div class="news">
+			<h3><a href="http://aiaa.unm.edu/2019/04/17/april-speaker-craig-smith-modeling-and-simulation-engineer/">Monthly Meeting on April 24th, Speaker: Craig Smith, Modeling and Simulation Engineer</a></h3>
+			<p>Hello everybody!! We hope that all is well with you. We will have our monthly meeting on Wednesdsay, April 24th. See the details below: Date: Wednesday, April 24th Time: 5:30 p.m. Location: MECH ...</p>
+			<h3><a href="http://aiaa.unm.edu/2019/04/15/unm-students-win-at-the-2019-region-iv-student-conference/">UNM Students win at the 2019 Region IV Student Conference</a></h3>
+			<p>Four members of the AIAA UNM Student chapter participated at the AIAA 2019 Region IV student conference, held this year in Austin, Texas on March 29-31. Two of them received awards for their ...</p>
+			<h3><a href="http://aiaa.unm.edu/2019/02/12/february-speaker-dr-tam-cfd-researcher/">February Speaker: Dr. Tam, CFD Researcher</a></h3>
+			<p>You are all invited to our monthly AIAA Speaker Series on February 20th at 5:30pm in ME 218. Don't miss out on the free pizza! Dr. C.-J. John Tam has more than 20 years of experience in ...</p>
+		</div>
+		<h4>2020</h4>
+		<h3><a href="http://aiaa.unm.edu/2019/04/17/april-speaker-craig-smith-modeling-and-simulation-engineer/">April 17</a></h3>
+		<p>Hello everybody!! We hope that all is well with you. We will have our monthly meeting on ...</p>
+		<h3><a href="http://aiaa.unm.edu/2019/04/15/unm-students-win-at-the-2019-region-iv-student-conference/">April 15</a></h3>
+		<p>Four members of the AIAA UNM Student chapter participated at the AIAA 2019 Region IV student ...</p>
+		<h3><a href="http://aiaa.unm.edu/2019/02/12/february-speaker-dr-tam-cfd-researcher/">February 12</a></h3>
+		<p>You are all invited to our monthly AIAA Speaker Series on February 20th at 5:30pm in ME 218. ...</p>
+		<h3><a href="http://aiaa.unm.edu/2019/01/16/have-a-great-spring-2019-semester/">January 16</a></h3>
+		<p>We hope that everyone is having a great start of the semester, good luck with everything!</p>
+		<h4>2019</h4>
+		<h3><a href="http://aiaa.unm.edu/2018/10/31/2019-region-iv-student-conference/">October 31</a></h3>
+		<p>Our AIAA student chapter plans to travel to Austin, Texas to take part in the 2019 Region IV ...</p>
+		<h3><a href="http://aiaa.unm.edu/2018/10/22/october-meeting-on-tuesday-10-23-at-530-p-m-in-me-218/">October 22</a></h3>
+		<p>Everyone is invited to our October Meeting, we present guest speaker, Jaime A. Stearns, ...</p>
+		<h3><a href="http://aiaa.unm.edu/2018/10/04/holloman-air-force-base-tour-nov-7th/">October 04</a></h3>
+		<p>Hello everyone! The Tour date changed from Nov 7th to Nov 28th! This is just a reminder to save ...</p>
+		<h3><a href="http://aiaa.unm.edu/2018/09/25/september-general-meeting/">September 25</a></h3>
+		<p>September 25, 2018 @ 5:30 pm MECH 218 Guest Speakers: Meeko Oishi and Fernando Aguilar Hope to ...</p>
+		<h3><a href="http://aiaa.unm.edu/2018/09/05/support-us/">September 05</a></h3>
+		<p>If you would like to donate to our AIAA UNM Chapter please click on the link. Thank you so ...</p>
+		<h3><a href="http://aiaa.unm.edu/2018/08/27/first-meeting/">August 27</a></h3>
+		<p>Everybody is welcome to the first meeting of the semester! Tuesday Aug 28th at 5:30pm. Come by ...</p>
+	</div>
+</body>
