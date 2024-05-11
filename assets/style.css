@@ -1,0 +1,75 @@
+body {
+	background-color: black;
+}
+
+h1 {
+	color: white;
+	font-family: "Helvetica";
+	font-size: 420%;
+	text-align: center;
+}
+
+h2 {
+	color: rgb(128, 0, 128);
+	font-family: "Helvetica";
+	font-size: 240%;
+	text-align: center;
+}
+
+h3 {
+	color: rgb(128, 50, 128);
+	font-family: "Helvetica";
+	font-size: 180%;
+	text-align: center;
+}
+
+.container {
+	position: relative;
+	width: 69%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container:hover
+
+.overlay {
+	opacity: 1;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.fade {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0 0 50px 40px black inset;
+}
